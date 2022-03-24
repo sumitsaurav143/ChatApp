@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  overflow: hidden;
+}
+
+.main_container{
+  background-color: rgb(195, 93, 241);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Chat_Header{
+  height: 80px;
+  background-color: rgb(1, 34, 53);
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header_Logo_div{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header_Logo{
+  height: 30px;
+  margin-left: 20px;
+  color:white;
+}
+
+.madein{
+  color: white;
+  margin-right: 20px;
+}
+
+.wrapper { 
+  height: 5px;
+  width: 100%;
+  margin: 0px;
+  border: none;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.Chat_Body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background: url("https://w0.peakpx.com/wallpaper/675/393/HD-wallpaper-goofy-colorful-design-dope-music-pattern.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(1, 34, 53, 0.701);
+  width: 100vw;
+}
+
+.Login_Page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: rgb(0, 92, 116) 0px 20px 30px -10px;
+}
+
+.username_label{
+  font-size: 30px;
+}
+
+.username{
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  border-radius:20px;
+  padding-left: 10px;
+  margin-top:20px;
+}
+
+.Chat_Window{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.Online_Users{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.Online_Users_head{
+  width: 100%;
+  height: 40px;
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #02b92a;
+  margin-bottom:2px;
+}
+
+.Online_peps{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.User{
+  width: 100%;
+  height: 60px;
+  background-color: rgba(182, 199, 209, 0.701);
+  margin: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.UserDetail{
+  width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.UserIconBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+
+.UserIcon{
+  height: 50px;
+  /* border: 2px solid #02b92a; */
+  border-radius: 50%;
+}
+
+.UserIcon_chat_my{
+  height: 40px;
+  border-radius: 50%;
+  margin-right:10px;
+}
+
+.UserIcon_chat_opp{
+  height: 40px;
+  border-radius: 50%;
+  margin-left:-10px;
+}
+
+.UserName{
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.MessageCounter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:20px;
+  height: 20px;
+  margin-right: 20px;
+  color:white;
+  background-color: #02b92a;
+  border-radius: 50%;
+  font-weight: bolder;
+  box-shadow: 1px 2px 3px rgb(8, 0, 0);
+}
+
+.User_Chat{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1000px rgba(1, 34, 53, 0.701);
+}
+
+.Chat_Box{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  margin: 2px;
+}
+
+.Chat_UserName{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(1, 34, 53);
+  padding-left: 20px;
+  border-bottom: 2px solid white;
+}
+
+.Messenger_box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top:30px;
+  flex-direction: column;
+  background-color: transparent;
+  overflow-y: auto;
+}
+
+.Opp_msg{
+  border: 2px solid white;
+  background-color: #0953a7;
+  margin-left: 20px;
+  padding:5px;
+  padding-left:20px;
+  padding-right:20px;
+  display: block;
+  width: auto;
+  max-width:60%;
+  border-radius: 0px 20px 20px 20px;
+}
+
+#curr_time{
+  font-size: 12px;
+  color: rgb(210, 247, 4);
+  border-left: 1px solid rgb(235, 232, 232);
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.my_msg{
+  border: 2px solid white;
+  background-color: #035661;
+  margin-right: 20px;
+  padding:5px;
+  padding-left:20px;
+  padding-right:20px;
+  display: block;
+  width: auto;
+  max-width:60%;
+  border-radius: 20px 0px 20px 20px;
+}
+
+.message-area{
+  height: 5px;
+}
+
+.message_data{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.message_data_opp{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.msg-image{
+  width: 50vw;
+  height: auto;
+  border: 1px solid black;
+}
+
+.message-control{
+  display: flex;
+}
+
+.message-control textarea{
+  width: 90%;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  background: #eee;
+  resize: none;
+  outline: none;
+  font-family: 'KoHo', sans-serif;
+  box-sizing: border-box;
+  padding: 5px;
+  display: inline-block;
+}
+.message-control button{
+  display: flex;
+  flex: 1;
+  height: 50px;
+  justify-content: flex-end;
+  outline: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  background: #028aff;
+  color: #fff;
+}
+
+.send_btn{
+  height: 40px;
+}
+
+#hidden-file{
+  display: none;
+}
+.attach_btn{
+  height: 50px;
+  background-color: #eee;
+}
