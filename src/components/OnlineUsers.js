@@ -3,11 +3,16 @@ import ChatWindow from './ChatWindow';
 
 
 export default function OnlineUsers(props) {
+    const [online_user,setOnlineUser] = useState(false);
 
     const { openUser, users, username, receiver, message, setMessage, sendMessage, groupMsg, sortNames, setMedia, handleKeyDown } = props;
     return (
         <div className="Chat_Window">
 
+           
+            { !online_user ?  
+            <img className='Check_Online_Persons'onClick={()=>{setOnlineUser(true)}} src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Online-icon.png"/>
+            : <>
             <div className='Online_Users'>
                 <div className='Online_Users_head'>
                     🧑‍🦱 Online Users 🧑‍🦱
@@ -21,7 +26,7 @@ export default function OnlineUsers(props) {
                                     {
 
                                         (user !== username) ? <div key={index} className="User" onClick={() => openUser(user)}>
-                                            <div className='UserDetail'>
+                                            <div className='UserDetail' onClick={()=>{setOnlineUser(false)}}>
                                                 <div className='UserIconBox'>
                                                     <img className='UserIcon' src="https://cdn-icons-png.flaticon.com/512/149/149071.png"></img>
                                                 </div>
@@ -35,8 +40,9 @@ export default function OnlineUsers(props) {
                             ))}
                 </div>
             </div>
-
-            <div className='User_Chat'>
+            </>
+}
+<div className='User_Chat'>
                 {
                     props.step >= 2 ? <ChatWindow
                         receiver={receiver}
@@ -50,7 +56,6 @@ export default function OnlineUsers(props) {
                         sortNames={sortNames} /> : <h2>Click on an online person to start chat</h2>
                 }
             </div>
-
         </div>
     )
 }
