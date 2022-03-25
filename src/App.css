@@ -216,7 +216,7 @@ background-size: 1800% 1800%;
 }
 
 .User_Chat{
-  width: 70%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -237,11 +237,12 @@ background-size: 1800% 1800%;
 }
 
 .Chat_UserName{
-  width: 100%;
+  width: 95%;
   height: 60px;
   background-color: rgb(1, 34, 53);
   padding-left: 20px;
   border-bottom: 2px solid white;
+  text-transform: capitalize;
 }
 
 .Messenger_box{
@@ -252,6 +253,7 @@ background-size: 1800% 1800%;
   flex-direction: column;
   background-color: transparent;
   overflow-y: auto;
+  margin-left:-20px;
 }
 
 .Opp_msg{
@@ -356,4 +358,67 @@ background-size: 1800% 1800%;
 .attach_btn{
   height: 50px;
   background-color: #eee;
+}
+.Check_Online_Persons{
+  position: absolute;
+  right:0;
+  top:100px;
+  height: 50px;
+  width: 50px  ;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid green;
+}
+
+@media only screen and (max-width: 720px) {
+  .Check_Online_Persons{
+    position: absolute;
+   z-index: 1;
+  }
+
+  .Login_Page{
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 90%;
+    color: white;
+  }
+
+  .Online_Users{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:85px;
+   
+  }
+  
+  .User_Chat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .user-pic{
+    display: none;
+  }
+
+  .message_data{
+  
+    margin-top:10px;
+    margin-bottom:8px;
+  }
+  
+  .message_data_opp{
+  
+    margin-top:10px;
+    margin-bottom:8px;
+  }
+  .Check_Online_Persons{
+    position: absolute;
+    right:0;
+    top:95px;
+    height: 40px;
+    width: 40px  ;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid green;
+  }
 }
